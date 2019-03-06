@@ -2,23 +2,14 @@ import React from 'react';
 import List from './List';
 import  './Todo.css';
 
-class TodoForm extends React.Component {
-    constructor() {
-        super();
-        this.state = {};
-    }
-    render () {
-        return (
-             <div>
-                <List items={this.state.items} />
-                 <form className="App" onSubmit={this.onSubmit}>
-                     <input valu={this.state.term} onChange={this.onChange} />
-                    <button>Enter</button>
-                </form>
-                
-            </div>
-            );
-    }
-}
+const TodoForm = (props) => {
+    return (
+      <form onSubmit={props.formSubmitted}>
+        <label htmlFor="newTodo">New Todo</label>
+        <input onChange={props.newTodoChanged} id="newTodo" name="newTodo" value={props.newTodo} />
+        <button type="submit">Add Todo</button>
+      </form>
+    )
+  };
 
 export default TodoForm;
