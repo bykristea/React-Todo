@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state ={
-      message: 'Jot your To Do items Here',
+      message: 'Jot To Do items Here',
       newTodo: '',
       todos: [{
         title: 'Make App in React',
@@ -76,18 +76,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h3>{this.state.message}</h3>
+        <h1>{this.state.message}</h1>
         <TodoForm
           newTodo={this.state.newTodo}
           formSubmitted={this.formSubmitted.bind(this)}
           newTodoChanged={this.newTodoChanged.bind(this)} />
-          <button onClick={() => this.allDone()}>All Done</button>
+          
 
         <List 
           todos={this.state.todos}
           toggleTodoDone={this.toggleTodoDone.bind(this)}
           removeTodo={this.removeTodo.bind(this)} />
-        
+        <button onClick={() => this.allDone()}>All Done</button>
       </div>
     );
   }

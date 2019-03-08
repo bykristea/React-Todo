@@ -6,7 +6,7 @@ const TodoItem = (props) => {
       <li>
         <input onChange={(event) => props.toggleTodoDone(event, index)} type="checkbox" checked={todo.done} />
         <span className={todo.done ? 'done' : ''}>{todo.title}</span>
-        <button onClick={() => props.removeTodo(index)}>Remove</button>
+        <button onClick={() => props.removeTodo(index)}>X</button>
       </li>
     );
   };

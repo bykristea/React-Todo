@@ -1,19 +1,48 @@
-body {
-    margin: 20px;
+.App {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
     padding: 20px;
     font-family: sans-serif;
+    text-align: left;
   }
   
   input[type="checkbox"] {
-    display: inline;
-    width: auto;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+  }
+  #newTodo {
+      margin: 20px;
+      padding: 5px 20px;
   }
   
-  .done {
-    text-decoration: line-through;
-  }
-
   button {
       padding: 5px;
       margin: 10px;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+  }
+  
+  ul>li:hover {
+    background-color: #F5F5F5;
+  }
+
+  
+  
+  .done {
+    color: red;
+    text-decoration: line-through;
+  }
+  
+  .todos {
+    color: #61DAFB;
+  }
+  
+  .icon {
+    margin: 6px 10px 6px 0;
   }
