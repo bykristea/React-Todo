@@ -1,5 +1,5 @@
 .App {
-    width: 400px;
+    width: 350px;
     height: 100%;
     margin: 0 auto;
     padding: 20px;
@@ -18,7 +18,7 @@
     height: 20px;
   }
   #newTodo {
-      margin: 10px 25px;
+      margin: 10px 20px;
       padding: 5px 25px;
   }
   
