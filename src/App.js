@@ -76,7 +76,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <img src={require('../src/img/note.png')} width="100"/>
+
         <h1>{this.state.message}</h1>
+
         <TodoForm
           newTodo={this.state.newTodo}
           formSubmitted={this.formSubmitted.bind(this)}
